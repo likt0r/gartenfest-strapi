@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guests",
+  "info": {
+    "name": "guest"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "events": {
+      "collection": "event",
+      "via": "guests",
+      "dominant": true
+    },
+    "invitations": {
+      "collection": "invitation",
+      "via": "guests",
+      "dominant": true
+    }
+  }
+}

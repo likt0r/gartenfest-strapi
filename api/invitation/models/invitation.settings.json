@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invitations",
+  "info": {
+    "name": "Invitation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Channel": {
+      "type": "string"
+    },
+    "tickets": {
+      "type": "integer"
+    },
+    "ticketsUsed": {
+      "type": "integer"
+    },
+    "event": {
+      "model": "event",
+      "via": "invitations"
+    },
+    "guests": {
+      "via": "invitations",
+      "collection": "guest"
+    }
+  }
+}

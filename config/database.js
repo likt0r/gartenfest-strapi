@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
         port: env.int('DATABASE_PORT', 5432),
         database: env('DATABASE_NAME', 'gartenfest'),
         username: env('DATABASE_USERNAME', 'postgres'),
-        password: env('DATABASE_PASSWORD', '^t@VC?/tB3id!\ips'),
+        password: env('DATABASE_PASSWORD', '8CvBNACARtcErMnrEQpA3CMSN5EBPets'),
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}
