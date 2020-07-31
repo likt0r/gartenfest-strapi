@@ -18,6 +18,13 @@
     "event": {
       "model": "event",
       "via": "invitations"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "uuid": {
+      "type": "uid",
+      "targetField": "Channel"
     }
   }
 }
