@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "Ticket"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "waitingList": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "event": {
+      "model": "event",
+      "via": "tickets"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tickets"
+    },
+    "signed": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

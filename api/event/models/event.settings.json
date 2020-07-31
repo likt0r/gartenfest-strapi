@@ -28,9 +28,9 @@
       "via": "event",
       "collection": "invitation"
     },
-    "guests": {
-      "via": "events",
-      "collection": "guest"
+    "tickets": {
+      "via": "event",
+      "collection": "ticket"
     }
   }
 }

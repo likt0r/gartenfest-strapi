@@ -12,19 +12,12 @@
     "Channel": {
       "type": "string"
     },
-    "tickets": {
-      "type": "integer"
-    },
-    "ticketsUsed": {
+    "maxTickets": {
       "type": "integer"
     },
     "event": {
       "model": "event",
       "via": "invitations"
-    },
-    "guests": {
-      "via": "invitations",
-      "collection": "guest"
     }
   }
 }
