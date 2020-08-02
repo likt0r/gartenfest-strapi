@@ -18,11 +18,6 @@
       "model": "event",
       "via": "tickets"
     },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "tickets"
-    },
     "signed": {
       "type": "date",
       "required": true
