@@ -9,28 +9,30 @@
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Description": {
+
+    "description": {
       "type": "richtext"
     },
-    "Date": {
-      "type": "date"
-    },
     "key": {
-      "type": "uid",
-      "targetField": "Name",
-      "required": true
+      "type": "uid"
     },
     "invitations": {
-      "via": "event",
-      "collection": "invitation"
+      "collection": "invitation",
+      "via": "event"
     },
     "tickets": {
-      "via": "event",
-      "collection": "ticket"
+      "collection": "ticket",
+      "via": "event"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
     }
   }
 }

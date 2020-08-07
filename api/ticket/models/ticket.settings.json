@@ -12,15 +12,24 @@
     "waitingList": {
       "type": "boolean",
       "default": true,
-      "required": true
+      "required": false
     },
     "event": {
-      "model": "event",
-      "via": "tickets"
+      "via": "tickets",
+      "model": "event"
     },
     "signed": {
       "type": "date",
-      "required": true
+      "required": false
+    },
+    "invitation": {
+      "model": "invitation",
+      "via": "tickets"
+    },
+    "guest": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tickets"
     }
   }
 }

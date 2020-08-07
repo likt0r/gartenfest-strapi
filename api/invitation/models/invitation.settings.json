@@ -9,22 +9,29 @@
     "timestamps": true
   },
   "attributes": {
-    "Channel": {
-      "type": "string"
+    "channel": {
+      "type": "string",
+      "required": true
     },
     "maxTickets": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "event": {
-      "model": "event",
-      "via": "invitations"
+      "via": "invitations",
+      "model": "event"
     },
     "description": {
       "type": "richtext"
     },
     "uuid": {
       "type": "uid",
-      "targetField": "Channel"
+      "targetField": "Channel",
+      "required": true
+    },
+    "tickets": {
+      "via": "invitation",
+      "collection": "ticket"
     }
   }
 }
