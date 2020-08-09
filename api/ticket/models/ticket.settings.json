@@ -27,9 +27,9 @@
       "via": "tickets"
     },
     "guest": {
+      "via": "tickets",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "tickets"
+      "model": "user"
     }
   }
 }

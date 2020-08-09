@@ -13,9 +13,7 @@ module.exports = {
     removeHistory(entity);
     if (entity) {
       removeHistory(entity.event);
-      delete entity.tickets;
     }
-
     return sanitizeEntity(entity, { model: strapi.models.invitation });
   },
 };

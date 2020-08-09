@@ -54,8 +54,14 @@
       "configurable": false
     },
     "tickets": {
-      "via": "guest",
-      "collection": "ticket"
+      "collection": "ticket",
+      "via": "guest"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
     }
   }
 }
