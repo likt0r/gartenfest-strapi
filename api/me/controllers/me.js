@@ -11,6 +11,8 @@ module.exports = {
       const result = {
         username: ctx.state.user.username,
         email: ctx.state.user.email,
+        adress: ctx.state.user.adress,
+        tel: ctx.state.user.tel,
       };
       return ctx.send(result);
     }
