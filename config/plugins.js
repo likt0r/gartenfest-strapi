@@ -6,8 +6,8 @@ module.exports = ({ env }) => ({
     settings: {
       host: "smtp.gmail.com",
       port: 465,
-      username: "the.paczka",
-      password: "p4czk4m41l",
+      username: "gartenfest2020",
+      password: "Wzw>uJAoxa9zn*aE",
       secure: true,
     },
   },
