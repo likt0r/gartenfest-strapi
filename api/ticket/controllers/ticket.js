@@ -8,7 +8,9 @@ const { sanitizeEntity } = require("strapi-utils");
 module.exports = {
   async find(ctx) {
     let entities;
-    Object.assign(ctx.query, { guest: ctx.state.user.id });
+    if (ctx.state.user.role !== "admin") {
+      Object.assign(ctx.query, { guest: ctx.state.user.id });
+    }
     if (ctx.query._q) {
       entities = await strapi.services.ticket.search(ctx.query);
     } else {
